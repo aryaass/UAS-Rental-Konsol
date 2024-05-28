@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+
+/* Custom Scrollbar */
+
+
+
+html {
+    --scrollbarBG: #ffffff;
+    --thumbBG: #202b91;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+} 
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+/* End of Custom Scrollbar */
+
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+} 
